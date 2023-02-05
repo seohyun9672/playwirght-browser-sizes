@@ -97,7 +97,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -125,7 +125,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
@@ -173,8 +173,19 @@
   }
 }
 
+/** Tablet */
+@media (max-width: 820px) {
+  .container {
+    background-color: rgb(0, 0, 255);
+  }
+}
+
 /* Mobile */
-@media (max-width: 700px) {
+@media (max-width: 414px) {
+  .container {
+    background-color: red;
+  }
+
   .content {
     padding: 4rem;
   }
@@ -272,6 +283,7 @@
   from {
     transform: rotate(360deg);
   }
+
   to {
     transform: rotate(0deg);
   }
